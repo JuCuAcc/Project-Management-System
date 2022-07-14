@@ -1,0 +1,233 @@
+﻿Each package is licensed to you by its owner. NuGet is not responsible for, nor does it grant any licenses to, third-party packages. Some packages may include dependencies which are governed by additional licenses. Follow the package source (feed) URL to determine any dependencies.
+
+Package Manager Console Host Version 6.1.0.106
+
+Type 'get-help NuGet' to see all available NuGet commands.
+
+PM> Add-Migration InitialCreate -verbose
+Using project 'ProjectTeamTaskManagement'.
+Using startup project 'ProjectTeamTaskManagement'.
+Build started...
+Build succeeded.
+C:\Program Files\dotnet\dotnet.exe exec --depsfile E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.deps.json --additionalprobingpath C:\Users\Hi\.nuget\packages --additionalprobingpath "C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages" --runtimeconfig E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.runtimeconfig.json C:\Users\Hi\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.3\tools\netcoreapp2.0\any\ef.dll migrations add InitialCreate --json --verbose --no-color --prefix-output --assembly E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.dll --project E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ProjectTeamTaskManagement.csproj --startup-assembly E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.dll --startup-project E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ProjectTeamTaskManagement.csproj --project-dir E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ --language C# --configuration Debug --working-dir E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement --root-namespace ProjectTeamTaskManagement
+Using assembly 'ProjectTeamTaskManagement'.
+Using startup assembly 'ProjectTeamTaskManagement'.
+Using application base 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0'.
+Using working directory 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement'.
+Using root namespace 'ProjectTeamTaskManagement'.
+Using project directory 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\'.
+Remaining arguments: .
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider in assembly 'ProjectTeamTaskManagement'...
+Finding Microsoft.Extensions.Hosting service provider...
+Using environment 'Development'.
+Using application service provider from Microsoft.Extensions.Hosting.
+Found DbContext 'ApplicationDbContext'.
+Finding DbContext classes in the project...
+Using context 'ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 6.0.3 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None
+Finding design-time services referenced by assembly 'ProjectTeamTaskManagement'...
+Finding design-time services referenced by assembly 'ProjectTeamTaskManagement'...
+No referenced design-time services were found.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'ProjectTeamTaskManagement'...
+No design-time services were found.
+Reusing namespace of type 'CreateIdentitySchema'.
+Writing migration to 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\Data\Migrations\20220403092259_InitialCreate.cs'.
+Writing model snapshot to 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\Data\Migrations\ApplicationDbContextModelSnapshot.cs'.
+To undo this action, use Remove-Migration.
+PM> Update-Database -verbose
+Using project 'ProjectTeamTaskManagement'.
+Using startup project 'ProjectTeamTaskManagement'.
+Build started...
+Build succeeded.
+C:\Program Files\dotnet\dotnet.exe exec --depsfile E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.deps.json --additionalprobingpath C:\Users\Hi\.nuget\packages --additionalprobingpath "C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages" --runtimeconfig E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.runtimeconfig.json C:\Users\Hi\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.3\tools\netcoreapp2.0\any\ef.dll database update --verbose --no-color --prefix-output --assembly E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.dll --project E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ProjectTeamTaskManagement.csproj --startup-assembly E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0\ProjectTeamTaskManagement.dll --startup-project E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ProjectTeamTaskManagement.csproj --project-dir E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\ --language C# --configuration Debug --working-dir E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement --root-namespace ProjectTeamTaskManagement
+Using assembly 'ProjectTeamTaskManagement'.
+Using startup assembly 'ProjectTeamTaskManagement'.
+Using application base 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\bin\Debug\net6.0'.
+Using working directory 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement'.
+Using root namespace 'ProjectTeamTaskManagement'.
+Using project directory 'E:\Jashim_Gtr\20220403\ProjectTeamTaskManagement\'.
+Remaining arguments: .
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider in assembly 'ProjectTeamTaskManagement'...
+Finding Microsoft.Extensions.Hosting service provider...
+Using environment 'Development'.
+Using application service provider from Microsoft.Extensions.Hosting.
+Found DbContext 'ApplicationDbContext'.
+Finding DbContext classes in the project...
+Using context 'ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 6.0.3 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.3' with options: None
+Finding design-time services referenced by assembly 'ProjectTeamTaskManagement'...
+Finding design-time services referenced by assembly 'ProjectTeamTaskManagement'...
+No referenced design-time services were found.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'ProjectTeamTaskManagement'...
+No design-time services were found.
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20220403092259_InitialCreate'.
+Applying migration '20220403092259_InitialCreate'.
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [EmployeeId] int NOT NULL IDENTITY,
+    [EmployeeName] nvarchar(max) NULL,
+    [Department] nvarchar(max) NULL,
+    [Designation] nvarchar(max) NULL,
+    [Email] nvarchar(max) NULL,
+    [Phone] nvarchar(max) NULL,
+    [IsAvailable] bit NOT NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeId])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Employees] (
+          [EmployeeId] int NOT NULL IDENTITY,
+          [EmployeeName] nvarchar(max) NULL,
+          [Department] nvarchar(max) NULL,
+          [Designation] nvarchar(max) NULL,
+          [Email] nvarchar(max) NULL,
+          [Phone] nvarchar(max) NULL,
+          [IsAvailable] bit NOT NULL,
+          CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeId])
+      );
+Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Tasks] (
+    [TaskId] int NOT NULL IDENTITY,
+    [TaskName] nvarchar(255) NOT NULL,
+    [TaskDescription] nvarchar(max) NULL,
+    [TaskDuration] nvarchar(255) NOT NULL,
+    CONSTRAINT [PK_Tasks] PRIMARY KEY ([TaskId])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Tasks] (
+          [TaskId] int NOT NULL IDENTITY,
+          [TaskName] nvarchar(255) NOT NULL,
+          [TaskDescription] nvarchar(max) NULL,
+          [TaskDuration] nvarchar(255) NOT NULL,
+          CONSTRAINT [PK_Tasks] PRIMARY KEY ([TaskId])
+      );
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Projects] (
+    [ProjectId] int NOT NULL IDENTITY,
+    [ProjectName] nvarchar(max) NULL,
+    [StartingDate] datetime2 NOT NULL,
+    [NumberOfTasks] int NOT NULL,
+    [NumberOfEmployee] int NOT NULL,
+    [EndingDate] datetime2 NOT NULL,
+    [IsActive] bit NOT NULL,
+    [EmployeeId] int NOT NULL,
+    [EmployeesEmployeeId] int NULL,
+    [TasksTaskId] int NULL,
+    CONSTRAINT [PK_Projects] PRIMARY KEY ([ProjectId]),
+    CONSTRAINT [FK_Projects_Employees_EmployeesEmployeeId] FOREIGN KEY ([EmployeesEmployeeId]) REFERENCES [Employees] ([EmployeeId]),
+    CONSTRAINT [FK_Projects_Tasks_TasksTaskId] FOREIGN KEY ([TasksTaskId]) REFERENCES [Tasks] ([TaskId])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Projects] (
+          [ProjectId] int NOT NULL IDENTITY,
+          [ProjectName] nvarchar(max) NULL,
+          [StartingDate] datetime2 NOT NULL,
+          [NumberOfTasks] int NOT NULL,
+          [NumberOfEmployee] int NOT NULL,
+          [EndingDate] datetime2 NOT NULL,
+          [IsActive] bit NOT NULL,
+          [EmployeeId] int NOT NULL,
+          [EmployeesEmployeeId] int NULL,
+          [TasksTaskId] int NULL,
+          CONSTRAINT [PK_Projects] PRIMARY KEY ([ProjectId]),
+          CONSTRAINT [FK_Projects_Employees_EmployeesEmployeeId] FOREIGN KEY ([EmployeesEmployeeId]) REFERENCES [Employees] ([EmployeeId]),
+          CONSTRAINT [FK_Projects_Tasks_TasksTaskId] FOREIGN KEY ([TasksTaskId]) REFERENCES [Tasks] ([TaskId])
+      );
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TaskAllocations] (
+    [TaskAllocationId] int NOT NULL IDENTITY,
+    [AllocationDate] datetime2 NOT NULL,
+    [TaskId] int NOT NULL,
+    [EmployeeId] int NOT NULL,
+    [CompletionDate] datetime2 NOT NULL,
+    [EmployeesEmployeeId] int NULL,
+    [TasksTaskId] int NULL,
+    CONSTRAINT [PK_TaskAllocations] PRIMARY KEY ([TaskAllocationId]),
+    CONSTRAINT [FK_TaskAllocations_Employees_EmployeesEmployeeId] FOREIGN KEY ([EmployeesEmployeeId]) REFERENCES [Employees] ([EmployeeId]),
+    CONSTRAINT [FK_TaskAllocations_Tasks_TasksTaskId] FOREIGN KEY ([TasksTaskId]) REFERENCES [Tasks] ([TaskId])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [TaskAllocations] (
+          [TaskAllocationId] int NOT NULL IDENTITY,
+          [AllocationDate] datetime2 NOT NULL,
+          [TaskId] int NOT NULL,
+          [EmployeeId] int NOT NULL,
+          [CompletionDate] datetime2 NOT NULL,
+          [EmployeesEmployeeId] int NULL,
+          [TasksTaskId] int NULL,
+          CONSTRAINT [PK_TaskAllocations] PRIMARY KEY ([TaskAllocationId]),
+          CONSTRAINT [FK_TaskAllocations_Employees_EmployeesEmployeeId] FOREIGN KEY ([EmployeesEmployeeId]) REFERENCES [Employees] ([EmployeeId]),
+          CONSTRAINT [FK_TaskAllocations_Tasks_TasksTaskId] FOREIGN KEY ([TasksTaskId]) REFERENCES [Tasks] ([TaskId])
+      );
+Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Projects_EmployeesEmployeeId] ON [Projects] ([EmployeesEmployeeId]);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Projects_EmployeesEmployeeId] ON [Projects] ([EmployeesEmployeeId]);
+Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Projects_TasksTaskId] ON [Projects] ([TasksTaskId]);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Projects_TasksTaskId] ON [Projects] ([TasksTaskId]);
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_TaskAllocations_EmployeesEmployeeId] ON [TaskAllocations] ([EmployeesEmployeeId]);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_TaskAllocations_EmployeesEmployeeId] ON [TaskAllocations] ([EmployeesEmployeeId]);
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_TaskAllocations_TasksTaskId] ON [TaskAllocations] ([TasksTaskId]);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_TaskAllocations_TasksTaskId] ON [TaskAllocations] ([TasksTaskId]);
+Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220403092259_InitialCreate', N'6.0.3');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20220403092259_InitialCreate', N'6.0.3');
+Done.
+PM> 

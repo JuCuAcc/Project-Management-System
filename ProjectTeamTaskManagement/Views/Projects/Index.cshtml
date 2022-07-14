@@ -1,0 +1,80 @@
+﻿@model IEnumerable<ProjectTeamTaskManagement.Models.Projects>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<style>
+
+a{
+    text-decoration:none;
+}
+
+
+</style>
+<h1>Project Information</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-hover d-sm-table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfTasks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfTasks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProjectId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProjectId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProjectId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

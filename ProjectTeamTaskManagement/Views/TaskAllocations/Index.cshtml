@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ProjectTeamTaskManagement.Models.TaskAllocations>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<style>
+
+a{
+    text-decoration:none;
+}
+
+</style>
+
+<h1>Task Allocation Details</h1>
+
+<p>
+    <a asp-action="Create">Assign Tasks</a>
+</p>
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AllocationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompletionDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllocationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletionDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TaskAllocationId" class="btn btn-info">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.TaskAllocationId" class="btn btn-secondary">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.TaskAllocationId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
